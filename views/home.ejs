@@ -1,0 +1,20 @@
+<%- include("partials/header.ejs"); -%>
+
+<h1 style="color:#2f39cc">Home</h1>
+<p> <%=information%> </p>
+
+     <%   array.forEach(function(v1){    %>
+        <h1> <%= (v1.Title) %></h1>   
+       <p> <%= (v1.PostDescription.substring(0,100)+"....")  %>
+       <% var s=v1.Title; %>
+        <a href="/post/<%=s%>">Read More</a>
+        </p>
+       
+        <% });                           %>
+
+</div>
+<div class="footer_home">
+    <p>@Abhishek Mahajan Blogs</p>
+</div>
+</body>
+</html>
